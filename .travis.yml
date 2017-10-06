@@ -1,0 +1,11 @@
+language: python
+python:
+      - "3.6"
+sudo: required
+addons:
+  apt:
+    packages:
+      - httping
+      - traceroute
+      - wget
+script: ./net-traceroute.sh

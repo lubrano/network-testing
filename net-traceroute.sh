@@ -7,6 +7,10 @@ sudo su -c "traceroute -I -A files.pharo.org"
 #sudo su -c "traceroute -I -A ci.inria.fr"
 traceroute -A vodcast.upmc.fr
 
+# latence serveurs
+httping -h files.pharo.org -c 10
+#httping -h ci.inria.fr -c 10
+httping -h vodcast.upmc.fr -c 10
 
 # wget
 wget  http://files.pharo.org/platform/Pharo6.0-linux.zip 
